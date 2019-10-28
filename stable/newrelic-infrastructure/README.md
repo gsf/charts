@@ -27,8 +27,8 @@ This chart will deploy the New Relic Infrastructure agent as a Daemonset.
 | `nodeSelector`            | Node label to use for scheduling                             | `nil`                      |
 | `tolerations`             | List of node taints to tolerate (requires Kubernetes >= 1.6) | See Tolerarions below      |
 | `updateStrategy`          | Strategy for DaemonSet updates (requires Kubernetes >= 1.6)  | `RollingUpdate`            |
-| `serviveAccount.create`   | If true, a service account would be created and assigned to the deployment | true |
-| `serviveAccount.name`     | The service account to assign to the deployment. If `serviveAccount.create` is true then this name will be used when creating the service account | |
+| `serviceAccount.create`   | If true, a service account would be created and assigned to the deployment | true |
+| `serviceAccount.name`     | The service account to assign to the deployment. If `serviceAccount.create` is true then this name will be used when creating the service account | |
 
 ## Example
 
